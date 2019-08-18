@@ -1,10 +1,5 @@
-// enum
-
-enum Color {
-  Gray,
-  Green,
-  Blue
-}
-
-let myColor: Color =  Color.Green;
-console.log(myColor);
+// any
+let car: any = "Tesla"
+console.log(car);
+car = {brand: "Tesla", model: 3}
+console.log(car);
