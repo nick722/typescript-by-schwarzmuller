@@ -1,2 +1,2 @@
-let hobbies: any[] = ["Walking", "Video Games"];
-hobbies =[100]
+//tuples
+let address: [string, number] = ["street", 1];
