@@ -58,3 +58,8 @@ let finalValue = "A string";
 if(typeof finalValue == "number") {
   console.log("Final value is a number");
 }
+
+// never
+function neverReturns():never {
+  throw new Error("An error!");
+}
