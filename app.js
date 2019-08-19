@@ -13,4 +13,10 @@ function sayHello() {
 function multiply(value1, value2) {
     return value1 * value2;
 }
-multiply(2, "Nick");
+multiply(2, 3);
+// function types
+var myMultiply;
+myMultiply = sayHello;
+myMultiply();
+myMultiply = multiply;
+console.log(myMultiply(5, 2));
