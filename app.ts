@@ -52,3 +52,9 @@ let complex2: Complex = {
 
 // union types
 let myRealRealAge: number | string
+
+// check types
+let finalValue = "A string";
+if(typeof finalValue == "number") {
+  console.log("Final value is a number");
+}

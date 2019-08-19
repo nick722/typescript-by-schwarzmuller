@@ -16,7 +16,32 @@ function multiply(value1, value2) {
 multiply(2, 3);
 // function types
 var myMultiply;
-myMultiply = sayHello;
-myMultiply();
+// myMultiply = sayHello;
+// myMultiply()
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+// objects
+var userData = {
+    name: "Nick",
+    age: 36
+};
+//complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealRealAge;
+// check types
+var finalValue = "A string";
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
