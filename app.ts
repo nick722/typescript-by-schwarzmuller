@@ -49,3 +49,6 @@ let complex2: Complex = {
     return this.data;
   }
 }
+
+// union types
+let myRealRealAge: number | string
