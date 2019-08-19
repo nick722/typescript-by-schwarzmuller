@@ -63,3 +63,11 @@ if(typeof finalValue == "number") {
 function neverReturns():never {
   throw new Error("An error!");
 }
+
+// Nullable Types
+let canBeNull: number | null = 12;
+canBeNull = null;
+let canAlsoBeNull;
+canAlsoBeNull = null;
+let canThisBeAny = null;
+canThisBeAny = 12;

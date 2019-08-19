@@ -45,3 +45,12 @@ var finalValue = "A string";
 if (typeof finalValue == "number") {
     console.log("Final value is a number");
 }
+// never
+function neverReturns() {
+    throw new Error("An error!");
+}
+// Nullable Types
+var canBeNull = 12;
+canBeNull = null;
+var canAlsoBeNull;
+canAlsoBeNull = null;
