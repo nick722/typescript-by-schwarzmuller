@@ -1,13 +1,3 @@
-var bankAccount = {
-    money: 2000,
-    deposit: function (value) {
-        this.money += value;
-    }
-};
-var myself = {
-    name: "Nick",
-    bankAccount: bankAccount,
-    hobbies: ["Walking", "Video Games"]
-};
-myself.bankAccount.deposit(3000);
-console.log("myself:", myself);
+var myName = "Nick";
+var myAge = 27;
+myName = 30;
