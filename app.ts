@@ -2,7 +2,7 @@ type bankAccountAlias = {money: number, deposit: (val: number) => void}
 
 let bankAccount: bankAccountAlias = {
   money: 2000,
-  deposit(value) {
+  deposit(value: number): void {
     this.money += value;
   }
 }
