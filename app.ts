@@ -21,7 +21,13 @@ multiply(2, 3)
 
 // function types
 let myMultiply: (val1: number, val2: number) => number;
-myMultiply = sayHello;
-myMultiply()
+// myMultiply = sayHello;
+// myMultiply()
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+
+// objects
+let userData: { name: string, age: number } = {
+  name: "Nick",
+  age: 36
+};
