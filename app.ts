@@ -26,7 +26,12 @@ person.printAge();
 
 // Inheritance
 class Piper extends Person{
-  name = "Piper";
+  // name = "Piper";
+
+  constructor(username: string) {
+    super("Piper", username);
+    this.age = 32;
+  }
 }
-const piper = new Piper("Cait", "cait");
+const piper = new Piper( "piper");
 console.log(piper);

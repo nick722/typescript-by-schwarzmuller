@@ -34,12 +34,13 @@ person.printAge();
 // Inheritance
 var Piper = /** @class */ (function (_super) {
     __extends(Piper, _super);
-    function Piper() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.name = "Piper";
+    // name = "Piper";
+    function Piper(username) {
+        var _this = _super.call(this, "Piper", username) || this;
+        _this.age = 32;
         return _this;
     }
     return Piper;
 }(Person));
-var piper = new Piper("Cait", "cait");
+var piper = new Piper("piper");
 console.log(piper);
