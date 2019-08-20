@@ -1,7 +1,7 @@
 class Person {
   name: string;
   private type: string;
-  protected age: number = 27;
+  protected age: number = 36;
 
   constructor(name: string, public username: string) {
     this.name = name;
@@ -23,3 +23,10 @@ console.log(person);
 
 person.printAge();
 // person.setType("Cool guy");
+
+// Inheritance
+class Piper extends Person{
+  name = "Piper";
+}
+const piper = new Piper("Cait", "cait");
+console.log(piper);
