@@ -1,7 +1,12 @@
-let myName: string = "Nick"
-let myAge: number = 27;
-let anything;
-anything = 12;
-anything = "what the fuck?"
+class Person {
+  name: string;
+  private type: string;
+  protected age: number;
 
-// myName = 30;
+  constructor(name: string, public username: string) {
+    this.name = name;
+  }
+}
+
+const person = new Person("Nick", 'nick');
+console.log(person);
