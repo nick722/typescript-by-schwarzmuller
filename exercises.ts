@@ -1,27 +1,51 @@
-// Exercise 2 - Two objects, based on each other ...
-// var baseObject = {
-//   width: 0,
-//   length: 0
+// // Exercise 3 - Make sure to compile to ES5 (set the target in tsconfig.json)
+// var person = {
+//   _firstName: ""
 // };
-// var rectangle = Object.create(baseObject);
-// rectangle.width = 5;
-// rectangle.length = 2;
-// rectangle.calcSize = function() {
-//   return this.width * this.length;
-// };
+// Object.defineProperty(person, "firstName", {
+//   get: function () {
+//     return this._firstName;
+//   },
+//   set: function (value) {
+//     if (value.length > 3) {
+//       this._firstName = value;
+//     }
+//     else {
+//       this._firstName = "";
+//     }
+//   },
+//   enumerable: true,
+//   configurable: true
+// });
+// console.log(person.firstName);
+// person.firstName = "Ma";
+// console.log(person.firstName);
+// person.firstName = "Maximilian";
+// console.log(person.firstName);
+//
+// stName);
 
-class BaseObject {
-  width = 0;
-  length = 0;
-}
+class Person {
+  private _firstName:string = "";
 
-class Rectangle extends BaseObject {
-  calcSize():number {
-    return this.width * this.length;
+  get firstName() {
+    return this._firstName;
+  }
+
+  set firstName(value: string) {
+    if(value.length > 3) {
+      this._firstName = value;
+    }
+    else {
+      this._firstName = "";
+    }
   }
 }
 
-const rectangle = new Rectangle;
-rectangle.width = 5;
-rectangle.length = 10;
-console.log(`rectangle.calcSize:`, rectangle.calcSize());
+const person = new Person();
+
+console.log(`person.firstName:`, person.firstName);
+person.firstName = "Ma";
+console.log(`person.firstName:`, person.firstName);
+person.firstName = "Maximilian";
+console.log(`person.firstName:`, person.firstName);
