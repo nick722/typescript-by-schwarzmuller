@@ -1,22 +1,28 @@
-class Car {
-  name: string;
-  acceleration: number = 0;
+// Exercise 2 - Two objects, based on each other ...
+// var baseObject = {
+//   width: 0,
+//   length: 0
+// };
+// var rectangle = Object.create(baseObject);
+// rectangle.width = 5;
+// rectangle.length = 2;
+// rectangle.calcSize = function() {
+//   return this.width * this.length;
+// };
 
-  constructor(name: string) {
-    this.name = name;
-  };
+class BaseObject {
+  width: number = 0;
+  length: number = 0;
+}
 
-  honk():void {
-    console.log("Tooot!");
-  }
+class Rectangle extends BaseObject {
+  width: number = 5;
+  length: number = 2;
 
-  accelerate(speed: number):void {
-    this.acceleration = this.acceleration + speed;
+  calcSize():number {
+    return this.width * this.length;
   }
 }
 
-const car = new Car("Tesla");
-car.honk();
-console.log(car.acceleration);
-car.accelerate(10)
-console.log(car.acceleration);
+const rectangle = new Rectangle;
+console.log(`rectangle.calcSize:`, rectangle.calcSize());
