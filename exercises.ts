@@ -11,18 +11,17 @@
 // };
 
 class BaseObject {
-  width: number = 0;
-  length: number = 0;
+  width = 0;
+  length = 0;
 }
 
 class Rectangle extends BaseObject {
-  width: number = 5;
-  length: number = 2;
-
   calcSize():number {
     return this.width * this.length;
   }
 }
 
 const rectangle = new Rectangle;
+rectangle.width = 5;
+rectangle.length = 10;
 console.log(`rectangle.calcSize:`, rectangle.calcSize());
