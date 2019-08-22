@@ -1,7 +1,7 @@
-/// <reference path="circleMath.ts" />
-/// <reference path="rectangleMath.ts" />
-var CircleMath = MyMath.Circle;
-var PI = 2.99;
-console.log(MyMath.calculateRectangle(10, 20));
-console.log(CircleMath.calculateCircumference(3));
-console.log(PI);
+define(["require", "exports", "./math/circle"], function (require, exports, circle_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    console.log(circle_1.PI);
+    console.log(circle_1.calculateCircumferecnce(10));
+});
+// console.log();
