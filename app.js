@@ -1,7 +1,9 @@
-define(["require", "exports", "./math/circle"], function (require, exports, circle_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    console.log(circle_1.PI);
-    console.log(circle_1.calculateCircumferecnce(10));
-});
-// console.log();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// import { PI, calculateCircumferecnce } from "./math/circle";
+var Circle = require("./math/circle");
+// import { calculateRectangle } from './math/rectangle'
+var rectangle_1 = require("./math/rectangle");
+console.log(Circle.PI);
+console.log(Circle.calculateCircumferecnce(10));
+console.log(rectangle_1.default(20, 50));
